@@ -6,6 +6,6 @@ const testSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const testSchema = mongoose.model("TestSchema", testSchema);
+const TestSchema = mongoose.model("TestSchema", testSchema);
 
-module.exports = testSchema;
+module.exports = TestSchema;
