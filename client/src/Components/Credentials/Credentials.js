@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import { Button, Grid, Row, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import API from "../../utilities/API";
 
 const style = {
   buttonStyle: {
-    margin: "-40px 10px 0 0",
+    margin: "10px 10px 0 0",
     float: "right"
   },
   headerStyle: {
     margin: "20px 0 0 10px",
-    fontWeight: 700
+    fontWeight: 700,
+    fontSize: "4rem",
+    textDecoration: "none",
+    color: "#333"
   },
   displayDiv: {
     backgroundColor: "rgba(255, 255, 255, .7)",
@@ -43,16 +48,24 @@ export default class Result extends Component {
     })
   }
 
+
+
   handleClick = (e) => {
     e.preventDefault();
-    alert(this.state.phoneNumber);
-    alert(this.state.nickName);
+    API.createTest({
+      phoneNumber: this.state.phoneNumber,
+      nickName: this.state.nickName
+    }).then(res => {
+      this.props.history.push("/results");
+    });
+    // alert(this.state.phoneNumber);
+    // alert(this.state.nickName);
   }
 
   render() {
     return (
       <div>
-        <h1 style={style.headerStyle}>SXSetFinder</h1><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
+        <Link style={style.headerStyle} to="/">SXSetFinder</Link><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
         <div style={style.displayDiv}>
           <p style={style.divHeader}>Enter Groupme Credentials:</p>
           <div style={style.inputStyle}>

@@ -25,33 +25,7 @@ class App extends Component {
   // }
   //
   // componentDidMount = () => {
-  //   this.loadItems();
-  //   // this.spotifyData();
-  // }
-  //
-  // loadItems = () => {
-  //   API.loadItems()
-  //   .then(res => {
-  //     this.setState({ testData: res.data });
-  //   }).catch(err => {
-  //     console.log(err);
-  //     alert("something went wrong");
-  //   });
-  // }
-  //
-  // handleChange = (e) => {
-  //   const {name, value} = e.target;
-  //
-  //   this.setState({
-  //     [name]: value
-  //   })
-  // }
-  //
-  // handleClick = (e) => {
-  //   e.preventDefault();
-  //   API.createTest({
-  //     testName: this.state.testName
-  //   }).then(res => this.loadItems());
+  //   this.spotifyData();
   // }
 
   render() {

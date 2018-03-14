@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const testSchema = new Schema({
-  testName: { type: String, required: true },
+const credentials = new Schema({
+  phoneNumber: { type: String, required: true },
+  nickName: { type: String, required: true },
   date: { type: Date, default: Date.now }
 });
 
-const TestSchema = mongoose.model("TestSchema", testSchema);
+const Credentials = mongoose.model("Credentials", credentials);
 
-module.exports = TestSchema;
+module.exports = Credentials;

@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 import { Button, Grid, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const style = {
   buttonStyle: {
-    margin: "-40px 10px 0 0",
+    margin: "10px 10px 0 0",
     float: "right"
   },
   headerStyle: {
     margin: "20px 0 0 10px",
-    fontWeight: 700
+    fontWeight: 700,
+    fontSize: "4rem",
+    textDecoration: "none",
+    color: "#333"
   },
   displayDiv: {
     backgroundColor: "rgba(255, 255, 255, .7)",
-    maxWidth: 900,
+    maxWidth: 850,
     margin: "100px auto"
   },
   divHeader: {
@@ -23,10 +27,11 @@ const style = {
   },
   imgStyle: {
     // maxWidth: 200
-    margin: 5
+    margin: 15
   },
   displayName: {
-    margin: 5
+    margin: 15,
+    fontSize: "2rem"
   },
   displayFooter: {
     fontSize: "2.5rem",
@@ -40,7 +45,7 @@ export default class Result extends Component {
   render() {
     return (
       <div>
-        <h1 style={style.headerStyle}>SXSetFinder</h1><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
+        <Link style={style.headerStyle} to ="/">SXSetFinder</Link><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
         <div style={style.displayDiv}>
           <p style={style.divHeader}>Top 3 Artist Recommendations</p>
           <Grid>

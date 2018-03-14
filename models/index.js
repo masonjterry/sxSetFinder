@@ -1,3 +1,3 @@
 module.exports = {
-  TestSchema: require("./test")
+  Credentials: require("./test")
 }
