@@ -26,7 +26,7 @@ const style = {
     fontSize: "3rem"
   },
   imgStyle: {
-    maxWidth: 200,
+    maxHeight: 200,
     margin: 15
   },
   displayName: {
@@ -47,7 +47,7 @@ export default class Result extends Component {
       <div>
         <Link style={style.headerStyle} to ="/">SXSetFinder</Link><Link style={style.buttonStyle} className="btn btn-primary" to="/credentials">Messenger Login</Link>
         <div style={style.displayDiv}>
-          <p style={style.divHeader}>Top 3 Artist Recommendations</p>
+          <p style={style.divHeader}>Top 3 Artist Recommendations for Philip</p>
           <Grid>
             <Row className="show-grid">
               <Col xs={12}>
@@ -68,6 +68,31 @@ export default class Result extends Component {
                     <div>
                       <img style={style.imgStyle} src={require("../../images/billie-ellish.jpg")} alt="artist 3" />
                       <p style={style.displayName}>Billie Ellish</p>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <p style={style.divHeader}>Top 3 Artist Recommendations for Andie</p>
+            <Row className="show-grid">
+              <Col xs={12}>
+                <Row className="show-grid">
+                  <Col xs={3}>
+                    <div>
+                      <img style={style.imgStyle} src={require("../../images/070.jpg")} alt="artist 1" />
+                      <p style={style.displayName}>070</p>
+                    </div>
+                  </Col>
+                  <Col xs={3}>
+                    <div>
+                      <img style={style.imgStyle} src={require("../../images/halsey.jpg")} alt="artist 2" />
+                      <p style={style.displayName}>Halsey</p>
+                    </div>
+                  </Col>
+                  <Col xs={3}>
+                    <div>
+                      <img style={style.imgStyle} src={require("../../images/khalid.jpg")} alt="artist 3" />
+                      <p style={style.displayName}>Kalid</p>
                     </div>
                   </Col>
                 </Row>
