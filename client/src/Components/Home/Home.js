@@ -11,14 +11,14 @@ const style = {
     fontWeight: 700
   },
   header2Style: {
-    fontSize: "5rem",
+    fontSize: "4.5rem",
     color: "#fff",
     textAlign: "center",
     margin: 20,
     fontWeight: 700
   },
   header3Style: {
-    fontSize: "5rem",
+    fontSize: "4.5rem",
     textAlign: "center",
     margin: 20,
     fontWeight: 700
@@ -42,7 +42,7 @@ export default class Home extends Component {
     return (
       <div style={style}>
         <h1 style={style.headerStyle}>SXSetFinder</h1>
-        <p style={style.header2Style}>Find your favorite fans. Connect with other concert goes.</p>
+        <p style={style.header2Style}>Find your favorite bands. Connect with other concert goers.</p>
         <p style={style.header3Style}>Experience SXSW the right way!</p>
         <div style={style.buttonStyle}>
           <Link style={style.btnStyle} className="btn btn-lg btn-success" to="/results">Spotify Login</Link>
