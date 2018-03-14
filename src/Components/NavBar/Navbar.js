@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import {Navbar,Nav,NavItem,MenuItem} from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import {Navbar,Nav,NavItem} from 'react-bootstrap';
+import { BrowserRouter as Router } from "react-router-dom";
 
 class NavBar extends Component {
  render() {
   return (
     <Navbar>
       <Navbar.Header>
-        <Navbar.Brand className='app-name'>
-          <a href="#home">sxSetFinder</a>
+        <Navbar.Brand className='app-name' >
+          <a href="/">sxSetFinder</a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav className='nav-items'>
@@ -19,9 +18,9 @@ class NavBar extends Component {
         <NavItem eventKey={2} href="#">
           Information
         </NavItem>
-        <NavItem>
+        <NavItem href='/login'>
           <Router>
-            <Link to={`/login`}>Login</Link>
+            <p >Login</p>
           </Router>
         </NavItem>
       </Nav>

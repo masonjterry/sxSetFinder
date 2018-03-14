@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid,Col,Row,Button} from 'react-bootstrap';
+import {Col,Row} from 'react-bootstrap';
 
 class AboutUs extends Component {
  render() {

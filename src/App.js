@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import {Button,Grid} from 'react-bootstrap';
+import axios from 'axios'
+import {Grid} from 'react-bootstrap';
 import NavBar from './Components/NavBar/Navbar';
 import MainPage from './Components/MainPage/MainPage';
 import Demo from './Components/Demo/Demo';
 import Footer from './Components/Footer/Footer';
 import AboutUs from './Components/AboutUs/AboutUs';
-import Recommendation from './Recommendation';
-import axios from 'axios'
 
 import './Styles/App.css';
 
@@ -22,6 +21,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+
     axios.get('/try')
       .then( (response) => {
         this.setState({
@@ -44,7 +44,6 @@ class App extends Component {
         <AboutUs aboutUsGrid={'show-grid'}/>
         <Demo demoGrid={'show-grid'}/>
       </Grid>
-      <Recommendation information={this.state.info}/>
       <Footer/>
 
   </div>);

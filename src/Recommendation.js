@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Grid,Col,Row,Thumbnail,Button} from 'react-bootstrap';
-import axios from 'axios'
+import NavBar from './Components/NavBar/Navbar';
 
 class Recommendation extends Component {
 
-
-
  render() {
   return (
+    <div>
+      <NavBar/>
        <Grid>
           <Row>
             <Col xs={6} md={4}>
@@ -42,6 +42,7 @@ class Recommendation extends Component {
             </Col>
           </Row>
         </Grid>
+    </div>
   )
  }
 }
