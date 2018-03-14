@@ -33,8 +33,8 @@ const style = {
 
 export default class Home extends Component {
 
-  handleClick = () => {
-    alert("click");
+  handleClick = (e) => {
+    this.props.history.push("/results");
   }
 
   render() {
