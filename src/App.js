@@ -1,24 +1,54 @@
-import React, { Component } from 'react';
-import { Button,ButtonToolbar } from 'react-bootstrap';
+import React, {Component} from 'react';
+import {Button,Grid} from 'react-bootstrap';
+import NavBar from './Components/NavBar/Navbar';
+import MainPage from './Components/MainPage/MainPage';
+import Demo from './Components/Demo/Demo';
+import Footer from './Components/Footer/Footer';
+import AboutUs from './Components/AboutUs/AboutUs';
+import Recommendation from './Recommendation';
+import axios from 'axios'
 
 import './Styles/App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-
-        <h2 className='heading'>sxSetFinder!</h2>
-        <ButtonToolbar>
-
-  <Button>Default</Button>
-
-  <Button bsStyle="primary">Primary</Button>
-
-</ButtonToolbar>
-      </div>
-    );
+  constructor(props) {
+      super(props)
+    this.state = {
+      info:{
+        name: false,
+        song:'Ping',
+      }
+    }
   }
+
+  componentDidMount() {
+    axios.get('/try')
+      .then( (response) => {
+        this.setState({
+          name:response.name,
+          song:response.song
+        })
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+   }
+
+ render() {
+  return (
+    <div className="App">
+      <NavBar/>
+      <Grid>
+        <MainPage showGrid={'show-grid'}/>
+        <AboutUs aboutUsGrid={'show-grid'}/>
+        <Demo demoGrid={'show-grid'}/>
+      </Grid>
+      <Recommendation information={this.state.info}/>
+      <Footer/>
+
+  </div>);
+ }
 }
 
 export default App;
