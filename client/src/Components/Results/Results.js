@@ -54,19 +54,19 @@ export default class Result extends Component {
                 <Row className="show-grid">
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist image" />
+                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 1" />
                       <p style={style.displayName}>Artist Name</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist image" />
+                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 2" />
                       <p style={style.displayName}>Artist Name</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist image" />
+                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 3" />
                       <p style={style.displayName}>Artist Name</p>
                     </div>
                   </Col>
