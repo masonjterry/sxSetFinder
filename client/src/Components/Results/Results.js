@@ -38,6 +38,10 @@ const style = {
     fontWeight: 700,
     textAlign: "center",
     margin: 50
+  },
+  displayInfo: {
+    margin: 15,
+    fontSize: "1.5rem"
   }
 }
 
@@ -56,18 +60,27 @@ export default class Result extends Component {
                     <div>
                       <img style={style.imgStyle} src={require("../../images/deluxe.jpeg")} alt="artist 1" />
                       <p style={style.displayName}>Deluxe</p>
+                      <p style={style.displayInfo}>Venue: Maggie Mae’s Rooftop</p>
+                      <p style={style.displayInfo}>Date: 15-Mar-18</p>
+                      <p style={style.displayInfo}>Time: 1:00am</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
                       <img style={style.imgStyle} src={require("../../images/saint-motel.jpg")} alt="artist 2" />
                       <p style={style.displayName}>Saint Motel</p>
+                      <p style={style.displayInfo}>Venue: Stubb's</p>
+                      <p style={style.displayInfo}>Date: 15-Mar-18</p>
+                      <p style={style.displayInfo}>Time: 10:40pm</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
                       <img style={style.imgStyle} src={require("../../images/billie-ellish.jpg")} alt="artist 3" />
                       <p style={style.displayName}>Billie Ellish</p>
+                      <p style={style.displayInfo}>Venue: Mohawk Outdoor</p>
+                      <p style={style.displayInfo}>Date: 15-Mar-18</p>
+                      <p style={style.displayInfo}>Time: 9:00pm</p>
                     </div>
                   </Col>
                 </Row>
@@ -81,18 +94,27 @@ export default class Result extends Component {
                     <div>
                       <img style={style.imgStyle} src={require("../../images/070.jpg")} alt="artist 1" />
                       <p style={style.displayName}>070</p>
+                      <p style={style.displayInfo}>Venue: Highland Lounge</p>
+                      <p style={style.displayInfo}>Date: 17-Mar-18</p>
+                      <p style={style.displayInfo}></p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src={require("../../images/halsey.jpg")} alt="artist 2" />
-                      <p style={style.displayName}>Halsey</p>
+                      <img style={style.imgStyle} src={require("../../images/kelela.jpg")} alt="artist 2" />
+                      <p style={style.displayName}>Kelela</p>
+                      <p style={style.displayInfo}>Venue: The Gatsby</p>
+                      <p style={style.displayInfo}>Date: 14-Mar-18</p>
+                      <p style={style.displayInfo}>Time: 10:00pm</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
                       <img style={style.imgStyle} src={require("../../images/khalid.jpg")} alt="artist 3" />
                       <p style={style.displayName}>Kalid</p>
+                      <p style={style.displayInfo}>Venue: Trinity Warehouse</p>
+                      <p style={style.displayInfo}>Date: 15-Mar-18</p>
+                      <p style={style.displayInfo}>Time: 12:00am</p>
                     </div>
                   </Col>
                 </Row>
