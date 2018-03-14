@@ -1,7 +1,7 @@
 {
   "name": "sxSetFinder",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "git@github.com:Ethan-liao/sxSetFinder.git",
   "author": "none",
   "license": "MIT",
