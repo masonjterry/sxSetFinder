@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const style = {
@@ -34,19 +34,20 @@ const style = {
 export default class Home extends Component {
 
   handleClick = (e) => {
+    e.preventDefault();
     this.props.history.push("/results");
   }
 
   render() {
     return (
       <div style={style}>
-      <h1 style={style.headerStyle}>SXSetFinder</h1>
-      <p style={style.header2Style}>Find your favorite fans. Connect with other concert goes.</p>
-      <p style={style.header3Style}>Experience SXSW the right way!</p>
-      <div style={style.buttonStyle}>
-        <Button style={style.btnStyle} bsStyle="success" bsSize="large" onClick={this.handleClick}>Spotify Login</Button>
-        <Button style={style.btnStyle} bsStyle="primary" bsSize="large" onClick={this.handleClick}>Messenger Login</Button>
-      </div>
+        <h1 style={style.headerStyle}>SXSetFinder</h1>
+        <p style={style.header2Style}>Find your favorite fans. Connect with other concert goes.</p>
+        <p style={style.header3Style}>Experience SXSW the right way!</p>
+        <div style={style.buttonStyle}>
+          <Link style={style.btnStyle} className="btn btn-lg btn-success" to="/results">Spotify Login</Link>
+          <Link style={style.btnStyle} className="btn btn-lg btn-primary" to="/credentials">Messenger Login</Link>
+        </div>
       </div>
     );
   }

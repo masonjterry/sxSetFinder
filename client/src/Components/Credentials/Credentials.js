@@ -58,14 +58,12 @@ export default class Result extends Component {
     }).then(res => {
       this.props.history.push("/results");
     });
-    // alert(this.state.phoneNumber);
-    // alert(this.state.nickName);
   }
 
   render() {
     return (
       <div>
-        <Link style={style.headerStyle} to="/">SXSetFinder</Link><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
+        <Link style={style.headerStyle} to="/">SXSetFinder</Link><Link style={style.buttonStyle} className="btn btn-primary" to="/credentials">Messenger Login</Link>
         <div style={style.displayDiv}>
           <p style={style.divHeader}>Enter Groupme Credentials:</p>
           <div style={style.inputStyle}>

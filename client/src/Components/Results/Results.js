@@ -26,7 +26,7 @@ const style = {
     fontSize: "3rem"
   },
   imgStyle: {
-    // maxWidth: 200
+    maxWidth: 200,
     margin: 15
   },
   displayName: {
@@ -45,7 +45,7 @@ export default class Result extends Component {
   render() {
     return (
       <div>
-        <Link style={style.headerStyle} to ="/">SXSetFinder</Link><Button style={style.buttonStyle} bsStyle="primary">Messenger Login</Button>
+        <Link style={style.headerStyle} to ="/">SXSetFinder</Link><Link style={style.buttonStyle} className="btn btn-primary" to="/credentials">Messenger Login</Link>
         <div style={style.displayDiv}>
           <p style={style.divHeader}>Top 3 Artist Recommendations</p>
           <Grid>
@@ -54,20 +54,20 @@ export default class Result extends Component {
                 <Row className="show-grid">
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 1" />
-                      <p style={style.displayName}>Artist Name</p>
+                      <img style={style.imgStyle} src={require("../../images/deluxe.jpeg")} alt="artist 1" />
+                      <p style={style.displayName}>Deluxe</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 2" />
-                      <p style={style.displayName}>Artist Name</p>
+                      <img style={style.imgStyle} src={require("../../images/saint-motel.jpg")} alt="artist 2" />
+                      <p style={style.displayName}>Saint Motel</p>
                     </div>
                   </Col>
                   <Col xs={3}>
                     <div>
-                      <img style={style.imgStyle} src="http://via.placeholder.com/200x200" alt="artist 3" />
-                      <p style={style.displayName}>Artist Name</p>
+                      <img style={style.imgStyle} src={require("../../images/billie-ellish.jpg")} alt="artist 3" />
+                      <p style={style.displayName}>Billie Ellish</p>
                     </div>
                   </Col>
                 </Row>
