@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import SingIn from "./Components/SingIn/SingIn";
+import SingIn from "./Components/SignIn/SignIn";
 import App from "./App";
 import Recommendation from './Recommendation';
-import NotFound from "./NotFound";
+// import NotFound from "./NotFound";
 
 const Router = () => (
   <BrowserRouter>
@@ -11,7 +11,7 @@ const Router = () => (
       <Route exact path="/" component={App} />
       <Route path="/login" component={SingIn} />
       <Route path="/success" component={Recommendation} />
-      <Route component={NotFound} />
+      {/* <Route component={NotFound} /> */}
     </Switch>
   </BrowserRouter>
 );

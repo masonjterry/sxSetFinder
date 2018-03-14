@@ -7,13 +7,13 @@ class Footer extends Component {
     <Navbar >
       <Nav className='nav-items'>
         <NavItem eventKey={1} href="#">
-          <a href='#'>Contact info</a>
+          <p>Contact info</p>
         </NavItem>
         <NavItem eventKey={2} href="#">
           Information
         </NavItem>
         <NavItem>
-        <a href='#'>About us</a>
+        <p href='#'>About us</p>
         </NavItem>
       </Nav>
     </Navbar>
