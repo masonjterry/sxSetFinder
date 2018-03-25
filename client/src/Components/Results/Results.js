@@ -53,9 +53,9 @@ export default class Result extends Component {
         <div style={style.displayDiv}>
           <p style={style.divHeader}>Top 3 Artist Recommendations for Philip</p>
           <Grid>
-            <Row className="show-grid">
+            <Row>
               <Col xs={12}>
-                <Row className="show-grid">
+                <Row>
                   <Col xs={3}>
                     <div>
                       <img style={style.imgStyle} src={require("../../images/deluxe.jpeg")} alt="artist 1" />
@@ -87,9 +87,9 @@ export default class Result extends Component {
               </Col>
             </Row>
             <p style={style.divHeader}>Top 3 Artist Recommendations for Andie</p>
-            <Row className="show-grid">
+            <Row>
               <Col xs={12}>
-                <Row className="show-grid">
+                <Row>
                   <Col xs={3}>
                     <div>
                       <img style={style.imgStyle} src={require("../../images/070.jpg")} alt="artist 1" />
